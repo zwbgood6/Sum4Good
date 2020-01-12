@@ -72,22 +72,23 @@ data inefficiency: need to collect a lot of data to consider all the cases.
 
 3. Comparison
 ```
----------------------------------------------------------------
-|    Control (systems)    |    Machine Learning (data)   | Combination |
----------------------------------------------------------------
-| + Models                | + Data collection
----------------------------------------------------------------
-| + Feedback              | + Learning
----------------------------------------------------------------
-| + Safety                | + Explore/exploit
----------------------------------------------------------------
-| + Worst-case            | + Average case
----------------------------------------------------------------
-| - Learning              | - Worst-case
----------------------------------------------------------------
-| - Data                  | - Safety
----------------------------------------------------------------
-| Performance limited     | Safety limited by lack of
-| by system understanding | system understanding
+------------------------------------------------------------------------------------------
+|    Control (systems)    |    Machine Learning (data)   |          Combination          |
+|-------------------------|------------------------------|-------------------------------|
+| + Models                | + Data collection            | - Combine Models and data.    |
+|-------------------------|------------------------------|                               |
+| + Feedback              | + Learning                   | - System must learn and adapt.|
+|-------------------------|------------------------------|                               |
+| + Safety                | + Explore/exploit            | - Safety, data efficiency.    |
+|-------------------------|------------------------------|                               |
+| + Worst-case            | + Average case               |                               |
+|-------------------------|------------------------------|                               |
+| - Learning              | - Worst-case                 |                               |
+|-------------------------|------------------------------|                               |
+| - Data                  | - Safety                     |                               |
+|-------------------------|------------------------------|                               |
+| Performance limited     | Safety limited by lack of    |                               |
+| by system understanding | system understanding         |                               |
+------------------------------------------------------------------------------------------
 ```
 
